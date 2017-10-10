@@ -1,4 +1,4 @@
-![mahua](mahua-logo.jpg)
+![mahua](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1507634223220&di=6b28318542d693333b03ba90eb2203e8&imgtype=0&src=http%3A%2F%2Fimg7.qiyipic.com%2Fimage%2Fappstore%2F20150122%2F48%2Fa5%2F202253120_9_1_1421910004996_16x9.jpg)
 ##MaHua是什么?
 一个在线编辑markdown文档的编辑器
 
