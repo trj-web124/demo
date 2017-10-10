@@ -1,0 +1,590 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+}
+#main{
+    width: 100%;
+}
+.col-md-3{
+    color: #fff;
+}
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot');
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+    url('iconfont.woff') format('woff'),
+    url('iconfont.ttf') format('truetype'),
+    url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+/*最大的盒子*/
+#bkd{
+    width: 100%;
+    height: 744px;
+    background-image: url("../img/bg1.jpg");
+    background-repeat: round;
+
+}
+/*最大的背景图*/
+#turn{
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    padding-top:200px    ;
+    perspective:2000px;
+}
+/*3d旋转的大盒子*/
+#turn>ul{
+      transform-style: preserve-3d;
+      width: 50px;
+      height: 50px;
+      list-style-type: none;
+      position: relative;
+      transform: rotateX(-30deg);
+      animation: run 10s linear infinite;
+      margin:auto;
+      line-height: 200px;
+}
+@keyframes run {
+    from{ transform: rotateX(-30deg) rotateY(0deg) rotateZ(0deg);
+
+    }
+    to{
+        transform: rotateX(-30deg) rotateY(360deg) rotateZ(0deg);
+    }
+}
+#turn>ul>li{
+    position: absolute;
+
+
+}
+#turn>ul>li:nth-child(1){
+      transform: rotateY(0deg) translateZ(500px);
+}
+#turn>ul>li:nth-child(2){
+    transform: rotateY(36deg) translateZ(500px);
+}
+#turn>ul>li:nth-child(3){
+    transform: rotateY(72deg) translateZ(500px);
+}
+#turn>ul>li:nth-child(4){
+    transform: rotateY(108deg) translateZ(500px);
+}
+#turn>ul>li:nth-child(5){
+    transform: rotateY(144deg) translateZ(500px);
+}
+#turn>ul>li:nth-child(6){
+    transform: rotateY(180deg) translateZ(500px);
+}
+#turn>ul>li:nth-child(7){
+    transform: rotateY(216deg) translateZ(500px);
+}
+#turn>ul>li:nth-child(8){
+    transform: rotateY(252deg) translateZ(500px);
+}
+#turn>ul>li:nth-child(9){
+    transform: rotateY(288deg) translateZ(500px);
+}
+#turn>ul>li:nth-child(10){
+    transform: rotateY(324deg) translateZ(500px);
+}
+
+#log>img{
+    display: block;
+}
+/*全能UI设计标语*/
+#log{
+    width: 780px;
+    border-top: 2px solid #cccacb;
+    border-bottom: 2px solid #cccacb;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    position: absolute;
+    top:250px;
+    left: 21%;
+}
+#log1>img{
+    display: block;
+}
+#log1{
+    position: absolute;
+    top: 150px;
+    left: 45%;
+
+}
+/*博看文思的图片*/
+#log2{
+
+    font-size: 25px;
+    font-weight: bolder;
+    color:#FFffff;
+    position: absolute;
+    top: 393px;
+    left: 28%;
+}
+/*最下面的标语*/
+#inanition{
+    clear: both;
+    width: 20px;
+    height: 40px;
+}
+
+
+/*<!--UI大咖设计师部分-->*/
+#banner{
+    width: 1100px;
+    height: 680px;
+    margin: 50px auto;
+    border-top:1px solid #cccacb;
+    border-bottom:1px solid #cccacb;
+    position: relative;
+
+}
+
+/*本班特邀面授讲师*/
+#lecturer{
+    width: 23%;
+    text-align: center;
+    position: absolute;
+    top: -23px;
+    left:37%;
+    font-size: 30px;
+    font-family: "微软雅黑", "宋体";
+    background-color: #FFffff;
+
+}
+/*中间部分的人物头像*/
+#BigHead{
+      float: left;
+      margin-top: 5%;
+      margin-left: 5%;
+}
+/*包住简介的大盒子*/
+#introduce{
+    float: left;
+    width: 60%;
+    margin: 80px 0 0 30px;
+}
+/*人物介绍*/
+#introduce>.introduce1{
+    font-size: 20px;
+    font-family: "微软雅黑", "宋体";
+    padding-bottom: 15px;
+
+}
+/*人物简介*/
+#introduce>.introduce2{
+    font-size: 16px;
+    font-family: "微软雅黑", "宋体";
+    line-height: 26px;
+
+}
+
+#introduce>.qedemo{
+    font-family: "微软雅黑", "宋体";
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+}
+
+#introduce>ul>li{
+    list-style-type: none;
+    float: left;
+}
+#introduce>ul>li>img{
+    display: block;
+    border: 1px solid #cccacb;
+}
+#introduce>ul>li:nth-child(1)
+,#introduce>ul>li:nth-child(2)
+,#introduce>ul>li:nth-child(3){
+    margin-bottom: 15px;
+}
+
+
+#b7,#c1{
+    margin:0 15px 0 15px;
+}
+
+#whatui{
+    width: 23%;
+    text-align: center;
+    position: absolute;
+    bottom:-20px;
+    left:37%;
+    font-size: 30px;
+    font-family: "微软雅黑", "宋体";
+    background-color: #FFffff;
+
+}
+
+/*什么是UI交互设计内容*/
+
+#whatui1{
+    clear: both;
+    width: 100%;
+    height: 520px;
+}
+#whatui1>.jianjie{
+    width: 70%;
+    text-align: center;
+    font-size: 18px;
+    font-family: "微软雅黑", "宋体";
+    margin: auto;
+}
+/*套三个水滴的大盒子*/
+#waters{
+    width: 80%;
+    height: 250px;
+    margin:auto;
+    padding-top: 50px;
+}
+#waters>.water1,.water2,.water3{
+        float: left;
+
+        text-align: center;
+        width: 23%;
+        height: 230px;
+        border: 1px solid #FFffff;
+        border-radius:50% 0 50% 50% ;
+
+}
+#waters>.water1{
+    background-color: #783778;
+    margin-left:4% ;
+}
+#waters>.water2{
+    margin: 0 110px;
+    background-color: #F07548;
+}
+#waters>.water3{
+    background-color: #4DBAB5;
+}
+/*三个水滴里面的字体*/
+#waters span{
+    display:inline-block;
+    width: 70px;
+    height: 100px;
+    font-size: 30px;
+    color: #FFffff;
+    margin-top: 29%;
+}
+#water-nr{
+    width: 80%;
+    margin: auto;
+
+}
+#water-nr>span{
+    width: 24%;
+    display:inline-block;
+    float: left;
+    padding-top: 30px;
+
+}
+#water-nr>span:nth-child(1){
+    margin-left:4% ;
+}
+#water-nr>span:nth-child(2){
+    margin: 0 106px 0 116px;
+}
+/*学习UI能干什么*/
+#studyui{
+    clear: both;
+    width: 100%;
+    height: 750px;
+    background: #FFB701;
+    padding-top: 70px;
+}
+#studyui1{
+    width: 80%;
+    height: 700px;
+    border-top: 1px solid #FFffff;
+    margin:auto;
+    position: relative;
+
+
+}
+/*标题*/
+#studyui1>.studyui-log{
+    font-size: 34px;
+    color: #FFffff;
+    width: 38%;
+    font-weight: normal;
+    text-align: center;
+    background-color: #FFB701;
+    position: absolute;
+    left: 32%;
+    top:-22px;
+}
+#studyui1>.studyui-nr{
+    width: 100%;
+    font-size: 16px;
+    font-family: "微软雅黑", "宋体";
+    color: #FFffff;
+    text-align: center;
+    margin-top: 45px;
+}
+#zhuan>ul{
+    width: 100%;
+    margin: 0px auto;
+    padding-left: 5%;
+    padding-top: 2%;
+    overflow: hidden;
+    line-height: 30px;
+}
+#zhuan>ul>li{
+    list-style-type: none;
+    width: 236px;
+    height: 271px;
+    float: left;
+    background-image: url("../img/h8.png");
+
+}
+
+/*六个旋转部分*/
+#zhuan>ul>.zhuann:hover{
+    background: url(../img/h9.png) 0 0 no-repeat;
+    -webkit-animation: zhuann 1s linear forwards;
+    -moz-animation: zhuann 1s linear forwards;
+    -ms-animation: zhuann 1s linear forwards;
+    animation: zhuann 1s linear forwards;
+
+}
+@keyframes zhuann {
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+/*调整六个盒子的边距*/
+#zhuan>ul>li:nth-child(2),#zhuan>ul>li:nth-child(5){
+    margin: 0 110px 0 110px;
+}
+#zhuan>ul>li:nth-child(1),#zhuan>ul>li:nth-child(2),#zhuan>ul>li:nth-child(3){
+    margin-bottom: 30px;
+}
+
+/*调整盒子里边的字体*/
+#zhuan>ul>.zhuann>span{
+    display: block;
+    font-size: 28px;
+    width: 50%;
+    height: 30%;
+    color: #FFffff;
+    text-align: center;
+    line-height: 32px;
+    margin: 0 auto;
+    margin-top: 90px;
+}
+
+/*学员作品北黑色的背景图*/
+#Students-work-bkd{
+    clear: both;
+    width: 100%;
+    height: 1137px;
+    background-color: #010108;
+    position: relative;
+}
+/*包住学员作品的div*/
+#Students-work{
+    clear: both;
+    width: 1000px;
+    height: 1137px;
+    position: absolute;
+    top: 0px;
+    left: 160px;
+    background: #181A26;
+
+}
+/*学员作品的图片*/
+#Students-work-log{
+    margin-left: 34%;
+}
+
+#txt{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    color: #FFC206;
+    margin-top: 20px;
+    font-weight: normal;
+}
+#Students-img>ul{
+      width: 95%;
+      height: 100%;
+      margin: 20px auto;
+      padding-left: 15px;
+
+}
+/*包住图片的盒子*/
+#Students-img>ul>li{
+    list-style-type: none;
+    width: 304px;
+    height: 228px;
+    float: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+    /*图片放大后溢出的部分隐藏*/
+}
+/*给图片一个过渡*/
+#Students-img>ul>li>img{
+    transition: all 0.8s;
+}
+/*放大图片*/
+#Students-img>ul>li>img:hover{
+    transform: scale(1.3);
+
+}
+#Students-img>ul>.img1{
+   margin:0 10px 0 10px;
+}
+
+/*工资水平*/
+
+#salary{
+    clear: both;
+    width: 100%;
+    height: 710px;
+}
+#salary1{
+    width: 85%;
+    height: 100%;
+    border-top: 1px solid #cccacb;
+    margin: 90px auto;
+    position: relative;
+
+}
+/*学UI交互工资水平*/
+#salary1>.salary-log{
+    width: 38%;
+    font-size: 35px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #FFffff;
+    position: absolute;
+    top: -26px;
+    left: 30%;
+
+}
+
+#salary1>.salary-txt{
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 35px;
+}
+
+/*平面设计师模块 三大模块 的父元素*/
+#salary-nr>ul{
+    width: 96%;
+    height: 500px;
+   margin: 20px 0 0 50px;
+}
+#salary-nr>ul>li{
+    width: 320px;
+    list-style-type: none;
+    float: left;
+    border: 1px solid #CCCCCC;
+}
+#salary-nr>ul>li:nth-child(2){
+    margin: 0 20px 0 20px;
+}
+
+
+
+#salary-nr>ul>li>.graphic-designer{
+    padding-top: 15px;
+}
+#salary-nr>ul>li>.graphic-designer>h4{
+    font-size: 24px;
+    text-align: center;
+}
+#salary-nr>ul>li>.graphic-designer>.designer-nr1{
+    line-height: 30px;
+    font-size: 18px;
+    font-family: "微软雅黑", "宋体";
+    width: 90%;
+    height: 150px;
+    margin: auto;
+}
+/*平面设计师年薪*/
+#salary-nr>ul>li>.graphic-designer>.designer-nr2{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #CCCCCC;
+    margin: 30px 0 30px 65px;
+}
+
+/*设计师年薪展示*/
+#salary-nr>ul>li>.graphic-designer>.nr2{
+    color: #3EADF2;
+}
+
+#salary-nr>ul>li>.graphic-designer>.nr3{
+    color: #2DAB23;
+}
+
+#salary-nr>ul>li>.graphic-designer>.nr4{
+    color: #FF7733;
+}
+
+
+/*中间的小色块 复用代码*/
+#salary-nr>ul>li>.graphic-designer>span{
+    display: inline-block;
+    width: 70px;
+    height: 4px;
+    margin: 10px 0 10px 130px;
+}
+
+/*中间的小色块设置不同的颜色*/
+#salary-nr>ul>li>.graphic-designer>.sp1{
+    background-color:#3EADF2;
+}
+#salary-nr>ul>li>.graphic-designer>.sp2{
+    background-color:#2DAB23;
+}
+#salary-nr>ul>li>.graphic-designer>.sp3{
+    background-color:#FF7733;
+}
+
+
+/*成为UI设计师*/
+#become{
+    width: 100%;
+    height: 240px;
+    background-color: #000000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
